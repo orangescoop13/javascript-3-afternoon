@@ -18,12 +18,13 @@ var carDetails = {
 // Do not edit the code above.
 
 /*
-  Use object destructuring to save the property values from the object carDetails into new variables. 
+  Use object destructuring to save the property values 
+  from the object carDetails into new variables. 
 */
 
 //Code Here
 
-
+var {color,make,model,year} = carDetails
 
 ////////// PROBLEM 2 //////////
 
@@ -34,6 +35,7 @@ var carDetails = {
 */
 
 function greeting( obj ) {
+
   //Code Here
   
   // Do not edit the code below.
