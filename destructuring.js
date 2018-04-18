@@ -35,7 +35,7 @@ var {color,make,model,year} = carDetails
 */
 
 function greeting( obj ) {
-
+  var{firstName,lastName,title} = obj
   //Code Here
   
   // Do not edit the code below.
