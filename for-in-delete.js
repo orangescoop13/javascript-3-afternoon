@@ -7,67 +7,90 @@
 */
 
 /*
-  First we'll look at the difference between accessing property values in a for in loop and accessing the property name in a for in loop.
-  In the example below, we are accessing the property values. Uncomment the code below, run it and look at what prints in the console.
+  First we'll look at the difference between accessing property values in 
+  a for in loop and accessing the property name in a for in loop.
+  In the example below, we are accessing the property values. Uncomment the 
+  code below, run it and look at what prints in the console.
 */
 
-// var values = {
-//   one: 'These',
-//   two: ' are',
-//   three: ' the',
-//   four: ' property',
-//   five: ' values.'
-// } 
+ var values = {
+   one: 'These',
+   two: ' are',
+   three: ' the',
+   four: ' property',
+   five: ' values.'
+ } 
 
-// for(var key in values) {
-//   console.log(values[key])
-// }
+ for(var key in values) {
+   console.log(values[key])
+ }
 
 /*
-  In this next example, we are accessing the property names themselves. Uncomment the code below, run it and look at what prints in the console.
+  In this next example, we are accessing the property names themselves. 
+  Uncomment the code below, run it and look at what prints in the console.
 */
 
-// for(var key in values) {
-//   console.log(key)
-// }
+for(var key in values) {
+   console.log(key)
+ }
 
 
 
 ////////// PROBLEM 1 //////////
 
 /*
-  Inside the function showValues, write a for in loop that concatenates each of the property values and returns the concatenated string.
+  Inside the function showValues, write a for in loop that concatenates 
+  each of the property values and returns the concatenated string.
 */
-
-function showValues( obj ) {
-  //Code Here
-}
-
+/*
+var string = "";
+function showValues(obj) {
+  for (var key in values){
+  string = string + values[key];
+  }
+console.log(string);
+*/
 
 
 ////////// PROBLEM 2 //////////
 
 /*
   Write a function called greaterThan10 that takes in an object. 
-  Write a for in loop that loops over the object and changes any value that is great than 10 to 0. 
+  Write a for in loop that loops over the object and changes any 
+  value that is great than 10 to 0. 
   Return the updated object.
 */
 
 //Code Here
+var object = {
 
+}
 
+function greaterThan10(object){
+for (var key in object){
+  if (object[key]>10){
+    (object[key]=0);
+  }
+}
+return object
+}
 
 ////////// PROBLEM 3 //////////
 
 /*
   Write a function called double that takes in an object.
-  Write a for in loop that loops over the object and changes every value to be itself multipled by 2.
+  Write a for in loop that loops over the object and changes 
+  every value to be itself multipled by 2.
   Return the updated object.
 */
 
 //Code Here
 
-
+function double(object){
+  for (var prop in object){
+object[prop]*=2;
+  }return object;
+}
 
 ////////// PROBLEM 4 //////////
 
@@ -81,7 +104,11 @@ function showValues( obj ) {
 
 //Code Here
 
-
+function secrets(object){
+  var emptyString = '';
+  for(var prop in object){
+  }
+}
 
 /* 
   Sometimes it's needed to delete object properties. 
