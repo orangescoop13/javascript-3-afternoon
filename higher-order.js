@@ -1,5 +1,6 @@
 /*
-  Once you complete a problem, refresh ./higher-order.html in your browser and check to see if the problem's test(s) are passing.
+  Once you complete a problem, refresh ./higher-order.html in your browser and check to see if the problem's 
+  test(s) are passing.
   Passed tests will be indicated by a green circle.
   Failed tests will be indicated by a red X.
 
@@ -21,7 +22,9 @@ const mixedNumbers = [6,3,1,7,5,2,6,8,9,4,2,7,9,3,1,8,4,3];
 */
 
 //Code Here
-let evenNumbers // = mixedNumbers.filter(/* Provide Your Callback Here */)
+let evenNumbers = mixedNumbers.filter(function(index){
+  return(index%2===0);
+});
 
 
 
@@ -32,11 +35,14 @@ const prices = [15.00, 23.00, 78.00, 34.00, 12.00, 86.00, 12.00, 79.00, 32.00];
 // Do not edit the code above.
 
 /*
-  Use the map method on the prices array to calculate a new array of post-tax prices.
+  Use the map method on the prices array to calculate a new array of 
+  post-tax prices.
   Use a 7% tax rate.
 
-  Math reminder! To calculate the price after tax, multiply the price by 1 plus the taxRate as a decimal.
-  Example: if tax is 7%, the price afterTax could be calculated like this: afterTax = price * 1.07) 
+  Math reminder! To calculate the price after tax, multiply the price by 1 plus the
+   taxRate as a decimal.
+  Example: if tax is 7%, the price afterTax could be calculated like this: 
+  afterTax = price * 1.07) 
 
   The map function also takes a callback with the parameters
   function(element, index, wholeArray){}  Function Form
@@ -44,7 +50,9 @@ const prices = [15.00, 23.00, 78.00, 34.00, 12.00, 86.00, 12.00, 79.00, 32.00];
 */
 
 //Code Here
-let postTaxPrices // = prices.map(/* Provide Your Callback Here );
+let postTaxPrices = prices.map(function(tax){
+  return tax * 1.07;
+});
 
 
 
